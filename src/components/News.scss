@@ -1,0 +1,17 @@
+@use '/src/variables';
+
+.news {
+  position: fixed; 
+  background-color: rgb(204, 204, 204);
+  text-align: left;
+
+  > h1 {
+    text-align: center;
+    border-style: ridge;
+    border-color: black;
+  }
+
+  > .flex {
+    display: flex;
+  }
+}

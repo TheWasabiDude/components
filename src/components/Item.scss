@@ -1,0 +1,13 @@
+@use '/src/variables';
+
+.item {
+  width: 200px;
+  height:200px;
+
+  > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+
+}

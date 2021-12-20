@@ -1,0 +1,7 @@
+@use '/src/variables';
+
+.newsItem {
+  > .title {
+    font-weight: bold;
+  }
+}
