@@ -2,13 +2,13 @@
 
 .news {
   position: fixed; 
-  background-color: rgb(204, 204, 204);
+  background-color: variables.$newsBackground;
   text-align: left;
 
   > h1 {
     text-align: center;
     border-style: ridge;
-    border-color: black;
+    border-color: variables.$h1Border;
   }
 
   > .flex {
