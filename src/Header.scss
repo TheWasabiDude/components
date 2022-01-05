@@ -1,0 +1,28 @@
+@use '/src/variables';
+
+.header {
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: variables.$topBarBackground;
+    text-align: center;
+
+    > li {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-left: 1px solid variables.$topBarBorder;
+      border-right: 1px solid variables.$topBarBorder;
+    }
+  
+    > li:hover:not(.noHover) {
+      background-color: variables.$topBarHover;
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+@use '/src/variables';
+
+.news {
+  background-color: variables.$newsBackground;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-size: 15px;
+
+  > .title {
+    font-weight: bold;
+  }
+
+  > h1 {
+    text-align: center;
+    border-style: ridge;
+    border-color: variables.$h1Border;
+  }
+
+  > .flex {
+    text-align: center;
+    border: 2px solid variables.$topBarBorder;
+  }
+}
