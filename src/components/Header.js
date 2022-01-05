@@ -9,9 +9,9 @@ export default class Header extends React.Component {
       <ul>
         <li>Főoldal</li>
         <li>Termékek</li>
+        <li>Kategóriák</li>
         <li>Kapcsolat</li>
-        <li style={{float: "right"}}>Bejelentkezés</li>
-        <li className="noHover" style={{float: "right"}}><button type="button">Keresés</button> <input type="text" placeholder="Keresés"></input></li>
+        <li style={{ float: "right" }}>Bejelentkezés</li>
       </ul>
     </div>
   }

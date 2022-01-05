@@ -1,13 +1,13 @@
 @use '/src/variables';
 
-.randomItems {
+.randomReviews {
   margin: 0;
   padding: 0;
   border-top: 2px solid variables.$topBarBorder;
   display: flex;
 }
 
-.randomItemsText {
+.randomReviewsText {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
@@ -16,5 +16,6 @@
     border-top: 2px solid variables.$topBarBorder;
     font-size: 20px;
     font-weight: bold;
+    
   }
 }

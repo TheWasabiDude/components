@@ -4,27 +4,25 @@
 
   ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     overflow: hidden;
     background-color: variables.$topBarBackground;
     text-align: center;
-  }
+
+    > li {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-left: 1px solid variables.$topBarBorder;
+      border-right: 1px solid variables.$topBarBorder;
+    }
   
-  li {
-    float: left;
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: 1px solid variables.$topBarBorder;
+    > li:hover:not(.noHover) {
+      background-color: variables.$topBarHover;
+    }
   }
 
-  li:hover:not(.noHover) {
-    background-color: variables.$topBarHover;
-  }
-}
-
-* {
-  margin: 0;
 }

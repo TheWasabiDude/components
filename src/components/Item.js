@@ -6,12 +6,12 @@ import './Item.scss';
 export default class Item extends React.Component {
 
   render() {
-    const { name, price, media } = this.props;
+    const { name, price, description, media } = this.props;
 
     return <div className="item">
-    <img src={media} width="150"></img>
+    <img className="itemPicture" src={media} width="150"></img>
     <div className="title">{name}</div>
-    <div>{price} Ft</div>
+    <div>{description}<br/>{price} Ft</div>
     </div>
   }
 
@@ -19,6 +19,7 @@ export default class Item extends React.Component {
 
 Item.propTypes = {
   name: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
   media: PropTypes.string.isRequired,
 };

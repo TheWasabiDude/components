@@ -1,9 +1,15 @@
 @use '/src/variables';
 
 .news {
-  position: fixed; 
   background-color: variables.$newsBackground;
-  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-size: 15px;
+
+  > .title {
+    font-weight: bold;
+  }
 
   > h1 {
     text-align: center;
@@ -12,6 +18,7 @@
   }
 
   > .flex {
-    display: flex;
+    text-align: center;
+    border: 2px solid variables.$topBarBorder;
   }
 }
